@@ -19,7 +19,6 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("MAMA");
         Scanner teclado = new Scanner(System.in);
         GestionUsuario gestion = new GestionUsuario();
 
@@ -30,10 +29,12 @@ public class Main {
             usuario = Menu.introduccion();
             switch (usuario) {
                 case 1:
+                    //Alta usuario
                     int seguridad = Menu.nivelSeguridad();
                     gestion.crearUsuario(seguridad);
                     break;
                 case 2:
+                    //Baja usuario
                     break;
                 case 3:
                     break;

@@ -63,4 +63,14 @@ public class Menu {
     public static void limpiarBuffer(){
         teclado.nextLine();
     }
+    /**
+     * Este metodo dará la informacion al usuario de que se ha repetido nombre y contraseña y no agregará el usuario a la lista hasta que cree uno 
+     * que no se repita
+     * @param numero si el numero recibido es -1 significará que no hay repetición
+     */
+    public static void usuarioRepetido(int numero){
+        if (numero != -1){
+            System.out.println("Este usuario ya existe, por favor elija un nombre o contraseña diferente, gracias");
+        }
+    }
 }
