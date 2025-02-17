@@ -35,6 +35,7 @@ public class Main {
                     break;
                 case 2:
                     //Baja usuario
+                    //hpña
                     gestion.eliminarUsuario();
                     break;
                 case 3:
